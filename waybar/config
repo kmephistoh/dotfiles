@@ -1,6 +1,8 @@
 {
     "layer": "top",
     "position": "bottom",
+    // swaymsg -t get_outputs
+    "output": "eDP-1",
     "modules-left": [
         "custom/launcher",
         "cpu",

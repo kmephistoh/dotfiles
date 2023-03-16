@@ -15,7 +15,7 @@ window#waybar.hidden {
 }
 
 #window {
-	margin-top: 6px;
+	margin-top: 0px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -25,7 +25,7 @@ window#waybar.hidden {
 }
 
 #tags {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 12px;
 	font-size: 4px;
 	margin-bottom: 0px;
@@ -69,7 +69,7 @@ window#waybar.hidden {
 }
 
 #network {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -81,7 +81,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -93,7 +93,7 @@ window#waybar.hidden {
 }
 
 #battery {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -128,7 +128,7 @@ window#waybar.hidden {
 }
 
 #backlight {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -140,7 +140,7 @@ window#waybar.hidden {
 }
 
 #clock {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -153,7 +153,7 @@ window#waybar.hidden {
 }
 
 #memory {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	margin-bottom: 0px;
@@ -165,7 +165,7 @@ window#waybar.hidden {
 }
 
 #cpu {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	margin-bottom: 0px;
@@ -177,7 +177,7 @@ window#waybar.hidden {
 }
 
 #tray {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	margin-bottom: 0px;
@@ -190,7 +190,7 @@ window#waybar.hidden {
 
 #custom-launcher {
 	font-size: 24px;
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 5px;
@@ -202,7 +202,7 @@ window#waybar.hidden {
 
 #custom-power {
 	font-size: 20px;
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	margin-right: 8px;
 	padding-left: 10px;
@@ -215,7 +215,7 @@ window#waybar.hidden {
 }
 
 #custom-wallpaper {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -227,7 +227,7 @@ window#waybar.hidden {
 }
 
 #custom-updates {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -239,7 +239,7 @@ window#waybar.hidden {
 }
 
 #custom-media {
-	margin-top: 6px;
+	margin-top: 0px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
