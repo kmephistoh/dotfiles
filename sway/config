@@ -85,8 +85,11 @@ exec --no-startup-id fcitx5 -d
     # lock screen
     bindsym Alt+l exec $lock
 
-    # screenshot
+    # screen shot
     bindsym Print exec grimshot copy area
+
+    # yofi lancher
+    bindsym F8 exec yofi apps
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -222,15 +225,15 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-    #swaybar_command waybar
+    # status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+    swaybar_command waybar
 
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    #colors {
+    #    statusline #ffffff
+    #    background #323232
+    #    inactive_workspace #32323200 #32323200 #5c5c5c
+    #}
 }
 
 #remove title bar, like chrome
