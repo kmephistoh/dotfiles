@@ -1,0 +1,5 @@
+LogLevel = 'info'
+ScanSchedule = '@every 10m'
+TranscodingCacheSize = '150MiB'
+MusicFolder = "/home/mephisto/Music"
+UIWelcomeMessage = "欢迎回家，Welcome back!"
