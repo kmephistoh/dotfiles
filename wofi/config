@@ -6,4 +6,5 @@ show_all=false
 insensitive=true
 allow_images=true
 normal_window=true
+allow_markup=true
 prompt= 👍启动快，快启动！就怕你不会用！🤔
