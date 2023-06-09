@@ -133,7 +133,10 @@
     <keybind key="F8">
       <action name="Execute" command="wofi" />
     </keybind>
-    <keybind key="A-l">
+    <keybind key="F9">
+      <action name="Execute" command="flameshot gui" />
+    </keybind>
+    <keybind key="W-l">
       <action name="Execute" command="swaylock" />
     </keybind>
     <keybind key="A-F4">

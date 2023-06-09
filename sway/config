@@ -86,7 +86,8 @@ exec --no-startup-id fcitx5 -d
     bindsym Alt+l exec $lock
 
     # screen shot
-    bindsym Print exec grimshot copy area
+    #bindsym Print exec grimshot copy area
+    bindsym Print exec grimshot save
 
     # yofi lancher
     bindsym F8 exec yofi apps

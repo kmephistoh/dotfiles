@@ -13,6 +13,9 @@ XDG_CURRENT_DESKTOP=wlroots
 # Force firefox to use wayland backend
 MOZ_ENABLE_WAYLAND=1
 
+# flameshot 
+XDG_CURRENT_DESKTOP=labwc
+
 # Set cursor theme.
 # Find icons themes with the command below or similar:
 #     find /usr/share/icons/ -type d -name "cursors"
