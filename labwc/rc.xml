@@ -133,11 +133,14 @@
     <keybind key="F8">
       <action name="Execute" command="wofi" />
     </keybind>
-    <keybind key="F9">
+    <keybind key="Print">
       <action name="Execute" command="flameshot gui" />
     </keybind>
     <keybind key="W-l">
       <action name="Execute" command="swaylock" />
+    </keybind>
+    <keybind key="C-semicolon">
+      <action name="Execute" command="clipman pick --tool wofi -T'--prompt=clipboard-history -i'" />
     </keybind>
     <keybind key="A-F4">
       <action name="Close" />
