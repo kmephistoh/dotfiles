@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "bottom",
     // swaymsg -t get_outputs
-    //"output": "eDP-1",
+    "output": "eDP-1",
     "modules-left": [
-        "wlr/taskbar",
+        //"wlr/taskbar",
         "custom/launcher",
         "cpu",
         "memory",
@@ -12,7 +12,8 @@
         "tray"
     ],
     "modules-center": [
-        "river/tags"
+        "wlr/taskbar"
+        //"river/tags"
     ],
     "modules-right": [
         "custom/updates",
@@ -121,6 +122,7 @@
         "on-click": "bash ~/.config/system_scripts/pkill_bc"
     },
     "wlr/taskbar": {
+	"all-outputs": true,
         "format": "{icon}",
         "on-click": "minimize-raise",
     },

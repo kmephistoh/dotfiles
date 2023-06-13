@@ -133,6 +133,9 @@
     <keybind key="F8">
       <action name="Execute" command="wofi" />
     </keybind>
+    <keybind key="F9">
+      <action name="Execute" command='grim -g "$(slurp)" - | wl-copy' />
+    </keybind>
     <keybind key="Print">
       <action name="Execute" command="flameshot gui" />
     </keybind>
