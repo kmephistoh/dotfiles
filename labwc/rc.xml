@@ -85,7 +85,10 @@
     -->
     <popupTime>1000</popupTime>
     <names>
-      <name>Default</name>
+      <name>work</name>
+    </names>
+    <names>
+      <name>term</name>
     </names>
   </desktops>
 
@@ -134,7 +137,10 @@
       <action name="Execute" command="wofi" />
     </keybind>
     <keybind key="F9">
-      <action name="Execute" command='grim -g "$(slurp)" - | wl-copy' />
+      <action>
+        <name>Execute</name>
+        <command>sh -c 'grim -g "`slurp`" - | swappy -f -'</command>
+      </action>
     </keybind>
     <keybind key="Print">
       <action name="Execute" command="flameshot gui" />
@@ -144,6 +150,18 @@
     </keybind>
     <keybind key="C-semicolon">
       <action name="Execute" command="clipman pick --tool wofi -T'--prompt=clipboard-history -i'" />
+    </keybind>
+    <keybind key="W-1">
+      <action name="GoToDesktop" to="term" wrap="yes" />
+    </keybind>
+    <keybind key="C-W-1">
+      <action name="SendToDesktop" to="term" follow="yes" wrap="yes" />
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="work" wrap="yes" />
+    </keybind>
+    <keybind key="C-W-2">
+      <action name="SendToDesktop" to="work" follow="yes" wrap="yes" />
     </keybind>
     <keybind key="A-F4">
       <action name="Close" />
