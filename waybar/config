@@ -1,7 +1,8 @@
 {
     "layer": "top",
     "position": "bottom",
-    // swaymsg -t get_outputs
+    // swaymsg -t get_outputs (sway)
+    // wlr-randr (others)
     "output": "eDP-1",
     "modules-left": [
         //"wlr/taskbar",
@@ -76,7 +77,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %H:%M  %d/%m/%Y}"
+        "format": "{: %H:%M  %d/%m/%Y %a}"
     },
     "cpu": {
         "interval": 15,
