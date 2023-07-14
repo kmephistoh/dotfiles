@@ -26,6 +26,7 @@ XCURSOR_THEME=breeze_cursors
 # to avoid menus with incorrect offset and blank windows
 # See https://github.com/swaywm/sway/issues/595
 #_JAVA_AWT_WM_NONREPARENTING=1
+_JAVA_AWT_WM_NONREPARENTING=1
 #
 
 # fcitx5
