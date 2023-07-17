@@ -118,10 +118,10 @@
         "interval": 15,
         "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
     },
-    "custom/wallpaper": {
-        "format": " ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
-    },
+    //"custom/wallpaper": {
+    //   "format": " ",
+    //    "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    //},
     "wlr/taskbar": {
 	"all-outputs": true,
         "format": "{icon}",
