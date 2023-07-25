@@ -1,0 +1,4 @@
+#* * * * * DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send '紧急通知' '<b> <u>这个世界很安静是吗？</u></b>' -i /home/mephisto/Pictures/404.jpg
+40 14 * * * DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send 'GC001' '<b><u>make money</u></b>' -i /home/mephisto/Pictures/vt100.jpg
+42 11 * * * DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send 'LUNCH' '<b><u>Go to lunch</u></b>' -i /home/mephisto/Pictures/lunch.jpg
+22 18 * * * DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send 'GO HOME' '<b><u>It is time to go home</u></b>' -i /home/mephisto/Pictures/bus.png
