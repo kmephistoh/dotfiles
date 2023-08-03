@@ -16,7 +16,7 @@
 
   <!-- <font><theme> can be defined without an attribute to set all places -->
   <theme>
-    <name></name>
+    <name>Dracula</name>
     <cornerRadius>8</cornerRadius>
     <font place="ActiveWindow">
       <name>sans</name>
