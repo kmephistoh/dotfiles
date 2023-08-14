@@ -49,6 +49,9 @@ menu.separator.color: #888888
 
 # on screen display (window-cycle dialog)
 osd.bg.color: #dddda6
-osd.border.color: #000000
+osd.border.color: #00F000
 osd.border.width: 1
-osd.label.text.color: #000000
+osd.label.text.color: #00F000
+osd.window-switcher.width: 800
+osd.window-switcher.item.padding.y: 2
+osd.window-switcher.item.active.border.width: 3
