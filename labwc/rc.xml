@@ -139,7 +139,8 @@
     <keybind key="F9">
       <action>
         <name>Execute</name>
-        <command>sh -c 'grim -g "`slurp`" - | swappy -f -'</command>
+        <!-- <command>sh -c 'grim -g "`slurp`" - | swappy -f -'</command> -->
+        <command>$HOME/.config/labwc/screenshot.sh</command>
       </action>
     </keybind>
     <keybind key="Print">
@@ -426,9 +427,9 @@
   -->
   <windowSwitcher show="yes" preview="yes" outlines="yes">
     <fields>
-      <field content="type" width="5%" />
-      <field content="app_id" width="15%" />
-      <field content="title" width="80%" />
+      <field content="type" width="10%" />
+      <field content="app_id" width="80%" />
+      <field content="title" width="10%" />
     </fields>
   </windowSwitcher>
 

@@ -2,7 +2,7 @@
 # on screen display (window-cycle dialog)
 osd.border.color: #00F000
 osd.border.width: 3
-osd.window-switcher.width: 1000
+osd.window-switcher.width: 800
 osd.window-switcher.item.padding.y: 2
 osd.window-switcher.item.active.border.width: 4
 
