@@ -136,16 +136,16 @@
     <keybind key="F8">
       <action name="Execute" command="wofi" />
     </keybind>
-    <keybind key="F9">
+    <keybind key="Print">
       <action>
         <name>Execute</name>
         <!-- <command>sh -c 'grim -g "`slurp`" - | swappy -f -'</command> -->
         <command>$HOME/.config/labwc/screenshot.sh</command>
       </action>
     </keybind>
-    <keybind key="Print">
+    <!-- <keybind key="Print">
       <action name="Execute" command="flameshot gui" />
-    </keybind>
+    </keybind> -->
     <keybind key="W-l">
       <action name="Execute" command="swaylock" />
     </keybind>
