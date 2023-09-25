@@ -41,7 +41,7 @@
   <windowSwitcher show="yes" preview="yes" outlines="yes">
     <fields>
       <field content="type" width="25%" />
-      <field content="app_id" width="25%" />
+      <field content="identifier" width="25%" />
       <field content="title" width="50%" />
     </fields>
   </windowSwitcher>
@@ -428,7 +428,7 @@
   <windowSwitcher show="yes" preview="yes" outlines="yes">
     <fields>
       <field content="type" width="10%" />
-      <field content="app_id" width="80%" />
+      <field content="identifier" width="80%" />
       <field content="title" width="10%" />
     </fields>
   </windowSwitcher>
