@@ -41,7 +41,7 @@
   <windowSwitcher show="yes" preview="yes" outlines="yes">
     <fields>
       <field content="type" width="10%" />
-      <field content="app_id" width="80%" />
+      <field content="identifier" width="80%" />
       <field content="title" width="10%" />
     </fields>
   </windowSwitcher>
@@ -140,7 +140,8 @@
       <action>
         <name>Execute</name>
         <!-- <command>sh -c 'grim -g "`slurp`" - | swappy -f -'</command> -->
-        <command>$HOME/.config/labwc/screenshot.sh</command>
+        <!-- <command>$HOME/.config/labwc/screenshot.sh</command> -->
+        <command>sh -c 'grim -g "`slurp`" - | ksnip -'</command>
       </action>
     </keybind>
     <!-- <keybind key="Print">
