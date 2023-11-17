@@ -41,8 +41,8 @@
   <windowSwitcher show="yes" preview="yes" outlines="yes">
     <fields>
       <field content="type" width="20%" />
-      <field content="identifier" width="40%" />
-      <field content="title" width="40%" />
+      <field content="identifier" width="30%" />
+      <field content="title" width="50%" />
     </fields>
   </windowSwitcher>
 
@@ -170,6 +170,9 @@
     </keybind>
     <keybind key="W-a">
       <action name="ToggleMaximize" />
+    </keybind>
+    <keybind key="W-h">
+      <action name="Iconify" />
     </keybind>
     <keybind key="A-Left">
       <action name="MoveToEdge" direction="left" />
