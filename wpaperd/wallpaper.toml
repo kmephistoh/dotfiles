@@ -1,12 +1,14 @@
 [default]
 path = "/home/mephisto/Pictures/Wallpapers/"
 duration = "30m"
-sorting = "ascending"
+sorting = "random"
 
 [eDP-1]
 path = "/home/mephisto/Pictures/Wallpapers/"
-apply-shadow = true
+duration = "30m"
+sorting = "random"
 
 [DP-2]
 path = "/home/mephisto/Pictures/Wallpapers/"
-sorting = "descending"
+duration = "30m"
+sorting = "random"
