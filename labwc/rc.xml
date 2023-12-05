@@ -127,9 +127,9 @@
     <keybind key="A-Tab">
       <action name="NextWindow" />
     </keybind>
-    <keybind key="W-Return">
+    <!-- <keybind key="W-Return">
       <action name="Execute" command="alacritty" />
-    </keybind>
+    </keybind> -->
     <keybind key="A-F3">
       <action name="Execute" command="bemenu-run" />
     </keybind>
@@ -144,9 +144,12 @@
         <command>sh -c 'grim -g "`slurp`" - | ksnip -'</command>
       </action>
     </keybind>
-    <!-- <keybind key="Print">
-      <action name="Execute" command="flameshot gui" />
-    </keybind> -->
+    <keybind key="W-Return">
+      <action>
+        <name>Execute</name>
+        <command>sh -c 'wlrctl window focus Alacritty || alacritty'</command>
+      </action>
+    </keybind>
     <keybind key="W-l">
       <action name="Execute" command="swaylock" />
     </keybind>
@@ -168,7 +171,7 @@
     <keybind key="A-F4">
       <action name="Close" />
     </keybind>
-    <keybind key="W-a">
+    <keybind key="W-m">
       <action name="ToggleMaximize" />
     </keybind>
     <keybind key="W-h">
