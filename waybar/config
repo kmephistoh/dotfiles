@@ -74,11 +74,11 @@
         ]
     },
     "tray": {
-        "icon-size": 18,
+        "icon-size": 16,
         "spacing": 10
     },
     "clock": {
-        "format": "{: %H:%M  %d/%m/%Y %a}"
+        "format": " {:%H:%M  %d/%m/%Y %a}"
     },
     "cpu": {
         "interval": 15,
@@ -127,6 +127,7 @@
 	"all-outputs": true,
         "format": "{icon}",
         "on-click": "minimize-raise",
+	"icon-theme": "Papirus, hicolor"
     },
 
     "bluetooth": {
