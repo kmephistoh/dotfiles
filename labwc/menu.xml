@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-
+<!-- Note: for localization support of menu items "client-menu" has to be removed here -->
 <menu id="client-menu">
   <item label="Minimize">
     <action name="Iconify" />
@@ -12,10 +12,13 @@
   <item label="Fullscreen">
     <action name="ToggleFullscreen" />
   </item>
+  <item label="Roll up/down">
+    <action name="ToggleShade" />
+  </item>
   <item label="Decorations">
     <action name="ToggleDecorations" />
   </item>
-  <item label="AlwaysOnTop">
+  <item label="Always on Top">
     <action name="ToggleAlwaysOnTop" />
   </item>
   <!--
@@ -28,6 +31,10 @@
     </item>
     <item label="Move right">
       <action name="SendToDesktop" to="right" />
+    </item>
+    <separator />
+    <item label="Always on Visible Workspace">
+      <action name="ToggleOmnipresent" />
     </item>
   </menu>
   <item label="Close">
