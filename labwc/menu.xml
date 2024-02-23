@@ -53,10 +53,10 @@
     <action name="Reconfigure" />
   </item>
   <item label="Exit">
-    <action name="Exit" />
+    <action name="Execute" command="wlogout" />
   </item>
   <item label="Poweroff">
-    <action name="Execute" command="systemctl -i poweroff" />
+    <action name="Execute" command="wlogout" />
   </item>
 </menu>
 
