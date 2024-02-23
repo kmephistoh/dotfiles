@@ -1,4 +1,4 @@
-# my_config
+# Dotfiles
 my config file
 
 ## Screenshots
