@@ -1,3 +1,5 @@
+#
+border.width: 2
 
 # on screen display (window-cycle dialog)
 osd.border.color: #00F000
