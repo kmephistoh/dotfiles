@@ -2,19 +2,19 @@
 size = 12.0
 
 [font.bold]
-family = "SauceCodeProNF"
+family = "HackNerdFont"
 style = "Bold"
 
 [font.bold_italic]
-family = "SauceCodeProNF"
+family = "HackNerdFont"
 style = "Bold Italic"
 
 [font.italic]
-family = "SauceCodeProNF"
+family = "HackNerdFont"
 style = "Italic"
 
 [font.normal]
-family = "SauceCodeProNF"
+family = "HackNerdFont"
 style = "Regular"
 
 [cursor]
