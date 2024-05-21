@@ -3,7 +3,8 @@
     "position": "bottom",
     // swaymsg -t get_outputs (sway)
     // wlr-randr (others)
-    "output": "eDP-1",
+    //"output": "eDP-1",
+    "output": "HDMI-A-1",
     "modules-left": [
         //"wlr/taskbar",
         "custom/launcher",
@@ -29,7 +30,7 @@
     "pulseaudio": {
         "tooltip": false,
         "scroll-step": 5,
-        "format": "{icon} {volume}%",
+        "format": "{icon}   {volume}%",
         "format-muted": "{icon} {volume}%",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "format-icons": {
@@ -78,16 +79,16 @@
         "spacing": 10
     },
     "clock": {
-        "format": " {:%H:%M  %d/%m/%Y %a}"
+        "format": "  {:%H:%M  %d/%m/%Y %a}"
     },
     "cpu": {
         "interval": 15,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "memory": {
         "interval": 30,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "custom/media": {
