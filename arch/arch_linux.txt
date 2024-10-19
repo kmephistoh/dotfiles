@@ -1,3 +1,6 @@
+0. wifi list
+nmcli device wifi list
+
 1. wifi
 nmcli device wifi connect ssid password your_wifi_password
 
