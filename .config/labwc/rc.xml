@@ -40,7 +40,8 @@
 
   <windowSwitcher show="yes" preview="yes" outlines="yes">
     <fields>
-      <field content="type" width="20%" />
+      <field content="icon" width="5%" />
+      <field content="type" width="15%" />
       <field content="identifier" width="30%" />
       <field content="title" width="50%" />
     </fields>

@@ -31,7 +31,7 @@ _JAVA_AWT_WM_NONREPARENTING=1
 #
 
 # fcitx5
-GTK_IM_MODULE=fcitx
+#GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 INPUT_METHOD=fcitx
