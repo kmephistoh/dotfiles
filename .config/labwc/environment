@@ -14,6 +14,9 @@ XKB_DEFAULT_LAYOUT=us
 # Force firefox to use wayland backend
 MOZ_ENABLE_WAYLAND=1
 
+# WLR_RENDERER: forces the creation of a specified renderer (available renderers: gles2, pixman, vulkan)
+WLR_RENDERER=vulkan
+
 # Set cursor theme.
 # Find icons themes with the command below or similar:
 #     find /usr/share/icons/ -type d -name "cursors"
