@@ -1,6 +1,6 @@
 configuration {
 /*	modes: "window,drun,run,ssh";*/
-/*	font: "mono 12";*/
+  font: "mono 16";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -22,6 +22,7 @@ configuration {
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
+  icon-theme: "Papirus";
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-exclude-categories: ;*/
@@ -165,22 +166,5 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
+
 }
-
-//@theme "/home/mephisto/.local/share/rofi/themes/windows11-grid-dark.rasi"
-
-//@theme "/home/mephisto/.local/share/rofi/themes/spotlight-dark.rasi"
-
-//@theme "/usr/share/rofi/themes/fullscreen-preview.rasi"
-
-//@theme "/home/mephisto/.local/share/rofi/themes/simple-tokyonight.rasi"
-
-//@theme "/usr/share/rofi/themes/fancy2.rasi"
-
-//@theme "/home/mephisto/.local/share/rofi/themes/catppuccin-macchiato.rasi"
-
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-
-//@theme "/usr/share/rofi/themes/Monokai.rasi"
-
-@theme "/usr/share/rofi/themes/solarized_alternate.rasi"
