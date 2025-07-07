@@ -138,7 +138,7 @@
       <action name="Execute" command="wofi" />
     </keybind>
     <keybind key="F9">
-      <action name="Execute" command="rofi -show window" />
+      <action name="Execute" command="rofi -theme-str 'element-icon { size: 1.0em;}' -show window" />
     </keybind>
     <keybind key="Print">
       <action>
@@ -252,7 +252,6 @@
 
     <!-- time is in ms -->
     <doubleClickTime>500</doubleClickTime>
-    <scrollFactor>1.0</scrollFactor>
 
     <context name="Frame">
       <mousebind button="A-Left" action="Press">
@@ -417,6 +416,7 @@
       <tapButtonMap></tapButtonMap>
       <middleEmulation></middleEmulation>
       <disableWhileTyping></disableWhileTyping>
+      <scrollFactor>1.0</scrollFactor>
     </device>
   </libinput>
 
