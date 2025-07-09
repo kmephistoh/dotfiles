@@ -2,7 +2,7 @@
 
     不包含proxy
 
-#  `sing-box-proxy-v1.11.5.json`
+#  2. `sing-box-proxy-v1.11.5.json`
 
     包含sock proxy 和 http proxy，用这份配置可在树莓派上开启一个代理服务，供局域网的设备翻墙使用。比如结合 `lighttpd` 可在Firefox
     上配置一个自动代理。
@@ -12,7 +12,7 @@
     
     自动代理文件配置请看下面
 
-# `proxy.pac`
+#  3. `proxy.pac`
 
 ```javascript
 function FindProxyForURL(url, host) {
