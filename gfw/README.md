@@ -15,3 +15,25 @@
 #  3. `proxy.pac`
 
     请查看proxy.pac文件
+
+#  4. 关掉树莓派`Raspberry Pi 2 Model B` 指示灯
+    
+     红灯 LED 真的过于耀眼：
+     Adding this line in /boot/firmware/config.txt for my Raspberry Pi 2 Model B Rev 1.1
+
+     ```ini
+        dtparam=pwr_led_trigger=none
+     ```
+     下面的选项未测试：
+     
+     Disable the PWR LED
+        dtparam=pwr_led_trigger=none     # 这一条测试有效果
+        dtparam=pwr_led_activelow=off
+
+     Disable the ACT LED. 
+        dtparam=act_led_trigger=none
+        dtparam=act_led_activelow=off
+
+     Disable the Ethernet LEDs. 
+        dtparam=eth_led0=4
+        dtparam=eth_led1=4
