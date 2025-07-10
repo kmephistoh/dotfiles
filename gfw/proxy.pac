@@ -9,8 +9,8 @@ function FindProxyForURL(url, host) {
         'googleapis.com', 'gstatic.com', 'googlevideo.com', 'googleadservices.com',
         'googlesyndication.com', 'googletagmanager.com',
         
-        'facebook.com', 'instagram.com', 'twitter.com', 'x.com', 
-        'twimg.com', 'reddit.com', 'imgur.com',
+        'facebook.com','fbcdn.net', 'twitter.com', 'x.com', 'quora.com',
+        'twimg.com', 'reddit.com', 'imgur.com', 'instagram.com',
         
         'github.com', 'githubassets.com', 'githubusercontent.com', 'github.io',
         'web.dev', 'medium.com', 'ycombinator.com',
