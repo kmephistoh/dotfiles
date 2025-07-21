@@ -157,6 +157,9 @@
     <keybind key="W-l">
       <action name="Execute" command="swaylock" />
     </keybind>
+    <keybind key="W-e">
+      <action name="Execute" command="doublecmd" />
+    </keybind>
     <keybind key="C-semicolon">
       <action name="Execute" command="clipman pick --tool wofi -T'--prompt=clipboard-history -i'" />
     </keybind>
