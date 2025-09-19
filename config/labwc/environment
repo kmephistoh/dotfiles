@@ -4,11 +4,8 @@
 XDG_CURRENT_DESKTOP=wlroots
 
 # Set keyboard layout to Swedish
-# XKB_DEFAULT_LAYOUT=se
-XKB_DEFAULT_LAYOUT=us
 
 # Set two keyboard layouts and toggle between them using alt+shift
-#XKB_DEFAULT_LAYOUT=se,de
 #XKB_DEFAULT_OPTIONS=grp:alt_shift_toggle
 
 # Force firefox to use wayland backend
@@ -39,3 +36,16 @@ QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 INPUT_METHOD=fcitx
 SDL_IM_MODULE=fcitx
+
+#vulkan
+#============
+#MESA RADV
+#VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+#
+#AMDVLK
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd32.json:/usr/share/vulkan/icd.d/amd_icd64.json
+
+#MangoHud
+MANGOHUD=1
+XCURSOR_SIZE=24
+XKB_DEFAULT_LAYOUT=us
