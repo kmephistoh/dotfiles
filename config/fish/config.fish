@@ -7,3 +7,6 @@ end
 
 function fish_greeting
 end
+
+set -x PATH $PATH (go env GOPATH)/bin
+set PATH $PATH ~/.cargo/bin
