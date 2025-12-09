@@ -1,9 +1,21 @@
 
 # paru
 
+1. 克隆 Paru 仓库
+git clone https://aur.archlinux.org/paru.git
+cd paru
+
+2. 编译并安装（makepkg 会自动处理依赖）
+makepkg -si
+
 # wlrctl
+git clone https://git.sr.ht/~brocellous/wlrctl
+meson setup --prefix=/usr/local build
+ninja -C build install
+
 
 # sing-box
+paru -S sing-box
 
 # fish
 chsh -s /usr/bin/fish
@@ -34,6 +46,10 @@ sudo pacman -S xdg-desktop-portal-wlr
 # wlogout swaylock
 sudo pacman -S swaylock
 
+# wpaperd
+
+sudo pacman -S wpaperd
+
 # other
 
 sudo pacman -S waybar firefox alacritty rust go atuin fish ttf-hack-nerd steam git rofi tmux noto-fonts-cjk cmake meson noto-fonts-emoji less
@@ -47,9 +63,6 @@ sudo pacman -S supertuxkart
 git config --global https.proxy http://192.168.1.5:1081
 git config --global https.proxy https://192.168.1.5:1081
 
-
-# sing-box
-paru -S sing-box
 
 # internet nm
 
