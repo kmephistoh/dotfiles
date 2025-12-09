@@ -52,11 +52,17 @@ sudo pacman -S wpaperd
 
 # other
 
-sudo pacman -S waybar firefox alacritty rust go atuin fish ttf-hack-nerd steam git rofi tmux noto-fonts-cjk cmake meson noto-fonts-emoji less
+sudo pacman -S waybar firefox alacritty rust go atuin fish ttf-hack-nerd git rofi tmux noto-fonts-cjk cmake meson noto-fonts-emoji less obsidian
 
 # supertuxkart
 
 sudo pacman -S supertuxkart
+
+# steam
+
+sudo pacman -S steam
+首次启动steam，请翻墙，否则更新客户端奇慢
+
 
 # git
 
