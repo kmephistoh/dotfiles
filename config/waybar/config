@@ -29,7 +29,7 @@
     ],
     "pulseaudio": {
         "tooltip": false,
-        "scroll-step": 5,
+        "scroll-step": 1,
         "format": "{icon}   {volume}%",
         "format-muted": "{icon} {volume}%",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
