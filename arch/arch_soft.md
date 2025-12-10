@@ -70,6 +70,10 @@ git config --global https.proxy http://192.168.1.5:1081
 git config --global https.proxy https://192.168.1.5:1081
 
 
+# strace
+
+sudo pacman -S strace
+
 # internet nm
 
 0. wifi list

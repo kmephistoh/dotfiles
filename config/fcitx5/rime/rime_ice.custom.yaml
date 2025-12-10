@@ -1,0 +1,8 @@
+# rime_ice.custom.yaml
+patch:
+  # 显式定义 menu，覆盖 default.yaml 的继承值
+  menu:
+    page_size: 10
+
+  # 添加你的词典
+  import_tables/@next: cn_dicts/dota2

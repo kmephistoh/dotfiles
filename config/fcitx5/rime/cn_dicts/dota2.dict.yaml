@@ -1,0 +1,235 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Sogou Pinyin Dict - 搜狗细胞词库
+#   
+#   https://pinyin.sogou.com/dict/
+#
+# 包括: 
+#
+# * dota2
+#
+
+---
+name: dota2
+version: "1.0"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - rime_ice        # ← 如果你用的是霧凇拼音，就寫 rime_ice；若用朙月拼音則寫 luna_pinyin
+...
+    
+艾欧	ai ou
+矮人直升机	ai ren zhi sheng ji
+矮子	ai zi
+暗夜魔王	an ye mo wang
+暗影恶魔	an ying e mo
+暗影萨满	an ying sa man
+白虎	bai hu
+白牛	bai niu
+半人马战行者	ban ren ma zhan xing zhe
+蝙蝠	bian fu
+蝙蝠骑士	bian fu qi shi
+变体	bian ti
+变体精灵	bian ti jing ling
+编织者	bian zhi zhe
+冰魂	bing hun
+冰龙	bing long
+冰女	bing nv
+不朽尸王	bu xiu shi wang
+长矛手	chang mao shou
+潮汐	chao xi
+潮汐猎人	chao xi lie ren
+沉默	chen mo
+沉默术士	chen mo shu shi
+船长	chuan zhang
+大地之灵	da di zhi ling
+大娜迦	da na jia
+大牛	da niu
+大屁股	da pi gu
+大圣	da sheng
+大树	da shu
+大鱼	da yu
+戴泽	dai ze
+德鲁伊	de lu yi
+地卜	di bu
+地卜师	di bu shi
+敌法	di fa
+敌法师	di fa shi
+电狗	dian gou
+电棍	dian gun
+毒狗	du gou
+毒龙	du long
+伐木机	fa mu ji
+发条	fa tiao
+发条技师	fa tiao ji shi
+飞机	fei ji
+风暴之灵	feng bao zhi ling
+凤凰	feng huang
+风行	feng xing
+风行者	feng xing zhe
+复仇之魂	fu chou zhi hun
+斧王	fu wang
+干扰者	gan rao zhe
+钢背	gang bei
+钢背兽	gang bei shou
+钢背猪	gang bei zhu
+工程师	gong cheng shi
+骨法	gu fa
+骨弓	gu gong
+光法	guang fa
+光之守卫	guang zhi shou wei
+哈斯卡	ha si ka
+海民	hai min
+撼地者	han di zhe
+寒冬飞龙	han dong fei long
+黑暗贤者	hei an xian zhe
+黑鸟	hei niao
+黑贤	hei xian
+猴子	hou zi
+幻刺	huan ci
+幻影长矛手	huan ying chang mao shou
+幻影刺客	huan ying ci ke
+灰烬之灵	hui jin zhi ling
+混沌	hun dun
+混沌骑士	hun dun qi shi
+祸乱之源	huo luan zhi yuan
+火猫	huo mao
+火女	huo nv
+鸡巴脸	ji ba lian
+假面	jia mian
+剑圣	jian sheng
+杰奇洛	jie qi luo
+酒仙	jiu xian
+剧毒	ju du
+剧毒术士	ju du shu shi
+狙击手	ju ji shou
+巨魔	ju mo
+巨魔战将	ju mo zhan jiang
+巨牙海民	ju ya hai min
+军团	jun tuan
+军团指挥官	jun tuan zhi hui guan
+卡尔	ka er
+克林克兹	ke lin ke zi
+恐怖利刃	kong bu li ren
+骷髅王	ku lou wang
+昆卡	kun ka
+拉比克	la bi ke
+拉席克	la xi ke
+莱恩	lai en
+蓝猫	lan mao
+蓝胖	lan pang
+狼人	lang ren
+老鹿	lao lu
+雷神	lei shen
+莉娜	li na
+力丸	li wan
+炼金	lian jin
+炼金术士	lian jin shu shi
+裂魂人	lie hun ren
+龙骑	long qi
+龙骑士	long qi shi
+露娜	lu na
+马格纳斯	ma ge na si
+蚂蚁	ma yi
+美杜莎	mei du sha
+魅惑魔女	mei huo mo nv
+猛犸	meng ma
+米波	mi bo
+米拉娜	mi la na
+谜团	mi tuan
+冥魂大帝	ming hun da di
+冥界亚龙	ming jie ya long
+殁境神蚀者	mo jing shen shi zhe
+末日	mo ri
+末日使者	mo ri shi zhe
+娜迦海妖	na jia hai yao
+孽主	nie zhu
+女王	nv wang
+帕格纳	pa ge na
+帕吉	pa ji
+帕克	pa ke
+拍拍熊	pai pai xiong
+祈求者	qi qiu zhe
+齐天大圣	qi tian da sheng
+全能	quan neng
+全能骑士	quan neng qi shi
+人马	ren ma
+萨尔	sa er
+沙王	sha wang
+上古巨神	shang gu ju shen
+赏金	shang jin
+赏金猎人	shang jin lie ren
+蛇女	she nv
+神灵	shen ling
+神牛	shen niu
+神谕	shen yu
+神谕者	shen yu zhe
+圣骑士	sheng qi shi
+圣堂	sheng tang
+圣堂刺客	sheng tang ci ke
+噬魂鬼	shi hun gui
+食人魔魔法师	shi ren mo mo fa shi
+尸王	shi wang
+嗜血狂魔	shi xue kuang mo
+兽王	shou wang
+树精卫士	shu jing wei shi
+树人	shu ren
+术士	shu shi
+双头龙	shuang tou long
+水晶室女	shui jing shi nv
+水人	shui ren
+斯拉达	si la da
+斯拉克	si la ke
+死灵法	si ling fa
+死灵法师	si ling fa shi
+死灵龙	si ling long
+死骑	si qi
+死亡先知	si wang xian zhi
+斯温	si wen
+司夜刺客	si ye ci ke
+剃刀	ti dao
+天怒	tian nu
+天怒法师	tian nu fa shi
+天穹守望者	tian qiong shou wang zhe
+痛苦女王	tong ku nv wang
+屠夫	tu fu
+土猫	tu mao
+兔子	tu zi
+维萨吉	wei sa ji
+瘟疫法师	wen yi fa shi
+巫妖	wu yao
+巫医	wu yi
+先知	xian zhi
+小狗	xiao gou
+小黑	xiao hei
+小精灵	xiao jing ling
+小鹿	xiao lu
+小娜迦	xiao na jia
+小牛	xiao niu
+小炮	xiao pao
+小强	xiao qiang
+小歪	xiao wai
+小小	xiao xiao
+小鱼	xiao yu
+熊猫	xiong mao
+熊战士	xiong zhan shi
+修补匠	xiu bu jiang
+虚空	xu kong
+虚空假面	xu kong jia mian
+血魔	xue mo
+亚巴顿	ya ba dun
+亚龙	ya long
+夜魔	ye mo
+一姐	yi jie
+隐刺	yin ci
+影魔	ying mo
+幽鬼	you gui
+育母蜘蛛	yu mu zhi zhu
+远古冰魄	yuan gu bing po
+炸弹人	zha dan ren
+召唤师	zhao huan shi
+蜘蛛	zhi zhu
+宙斯	zhou si
+主宰	zhu zai
+卓尔游侠	zhuo er you xia
