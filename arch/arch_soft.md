@@ -29,6 +29,10 @@ fcitx5 -rd
 # firefox
 Automatic proxy configuration URL: http://192.168.1.5/proxy.pac
 
+# chromium
+
+sudo pacman -S chromium
+
 # clipbord
 
 sudo pacman -S clipcat
