@@ -44,6 +44,7 @@ configuration {
 /*	parse-known-hosts: true;*/
 /*	combi-modes: "window,run";*/
 /*	matching: "normal";*/
+   matching: "fuzzy";
 /*	tokenize: true;*/
 /*	m: "-5";*/
 /*	filter: ;*/
