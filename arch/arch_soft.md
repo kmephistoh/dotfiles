@@ -1,4 +1,3 @@
-
 # paru
 
 1. 克隆 Paru 仓库
@@ -46,6 +45,7 @@ sudo pacman -S ksnip
 # xdg-desktop-portal
 sudo pacman -S xdg-desktop-portal
 sudo pacman -S xdg-desktop-portal-wlr
+确保xdg-desktop-portal和xdg-desktop-portal-gtk（或kde）已安装并运行,不然wechat-bin无法截图
 
 # wlogout swaylock
 sudo pacman -S swaylock
@@ -56,7 +56,7 @@ sudo pacman -S wpaperd
 
 # other
 
-sudo pacman -S waybar firefox alacritty rust go atuin fish ttf-hack-nerd git rofi tmux noto-fonts-cjk cmake meson noto-fonts-emoji less obsidian
+sudo pacman -S waybar firefox alacritty rust go atuin fish ttf-hack-nerd git rofi tmux noto-fonts-cjk cmake meson noto-fonts-emoji less obsidian hugo man-db man-pages
 
 # supertuxkart
 
@@ -66,6 +66,14 @@ sudo pacman -S supertuxkart
 
 sudo pacman -S steam
 首次启动steam，请翻墙，否则更新客户端奇慢
+
+# imagemagick
+
+sudo pacman -S imagemagick
+
+# obs-studio
+
+sudo pacman -S obs-studio
 
 
 # git
@@ -79,6 +87,8 @@ git config --global https.proxy https://192.168.1.5:1081
 sudo pacman -S strace
 
 # internet nm
+
+sudo pacman -S networkmanager dnsmasq
 
 0. wifi list
 nmcli device wifi list
