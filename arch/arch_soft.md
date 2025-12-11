@@ -45,7 +45,6 @@ sudo pacman -S ksnip
 # xdg-desktop-portal
 sudo pacman -S xdg-desktop-portal
 sudo pacman -S xdg-desktop-portal-wlr
-确保xdg-desktop-portal和xdg-desktop-portal-gtk（或kde）已安装并运行,不然wechat-bin无法截图
 
 # wlogout swaylock
 sudo pacman -S swaylock
