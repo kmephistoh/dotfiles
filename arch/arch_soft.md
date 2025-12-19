@@ -61,10 +61,14 @@ sudo pacman -S swaylock
 
 sudo pacman -S wpaperd
 
+# dev
+
+sudo pacman -S uv ty
+
 # other
 
 sudo pacman -S waybar firefox alacritty rust go atuin fish ttf-hack-nerd git rofi tmux noto-fonts-cjk cmake meson noto-fonts-emoji less obsidian hugo man-db man-pages fzf fastfetch flameshot rsync yt-dlp aria2 tree \
- 7zip 0ad audacity blender godot wlr-randr sniffnet mangohud goverlay vlc vlc-plugins-all keepassxc \
+ 7zip 0ad audacity blender godot wlr-randr sniffnet mangohud goverlay vlc vlc-plugins-all keepassxc jenkins libreoffice argocd \
 
 # supertuxkart
 
