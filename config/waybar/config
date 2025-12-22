@@ -11,8 +11,8 @@
         "cpu",
         "memory",
         "custom/media",
-        "tray",
-	"ext/workspaces"
+	"ext/workspaces",
+        "tray"
     ],
     "modules-center": [
         "wlr/taskbar"
