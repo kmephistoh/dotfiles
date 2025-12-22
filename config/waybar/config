@@ -31,7 +31,7 @@
     "pulseaudio": {
         "tooltip": false,
         "scroll-step": 1,
-        "format": "{icon}   {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": "<span font='15'color='#ff69b4'>󰝟</span>",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "format-icons": {
@@ -48,7 +48,7 @@
     },
     "network": {
 	"format": "{icon} {essid} {signalStrength}%",
-    	"format-wifi": "    {ifname} {ipaddr}/{cidr} {signalStrength}%",
+    	"format-wifi": "  {ifname} {ipaddr}/{cidr} {signalStrength}%",
     	"format-ethernet": "󰈀 {ipaddr}",
     	"format-disconnected": "󰖪 disconnected",
     	"tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
@@ -84,16 +84,16 @@
         "spacing": 10
     },
     "clock": {
-        "format": "  {:%H:%M  %d/%m/%Y %a}"
+        "format": " {:%H:%M %d/%m/%Y %a}"
     },
     "cpu": {
         "interval": 15,
-        "format": "  {}%",
+        "format": " {}%",
         "max-length": 10
     },
     "memory": {
         "interval": 30,
-        "format": "  {}%",
+        "format": " {}%",
         "max-length": 10
     },
     "custom/media": {
@@ -137,7 +137,7 @@
     },
 
     "bluetooth": {
-	    "format": " {status}",
+	    "format": "{status}",
 	    "format-connected": " {device_alias}",
 	    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
 	    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
