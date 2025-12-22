@@ -32,9 +32,10 @@
         "tooltip": false,
         "scroll-step": 1,
         "format": "{icon}   {volume}%",
-        "format-muted": "{icon} {volume}%",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-muted": "<span font='15'color='#ff69b4'>󰝟</span>",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "format-icons": {
+	    "headphones": "󰋋",
             "default": [
                 "",
                 "",
