@@ -111,8 +111,8 @@
     },
     "custom/launcher": {
         "format": " ",
-        "on-click": "wofi -show drun",
-        "on-click-right": "killall wofi"
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
     },
     "custom/power": {
         "format": " ",
