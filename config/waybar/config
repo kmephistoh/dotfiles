@@ -21,6 +21,7 @@
         //"custom/updates",
         //"custom/wallpaper",
         "bluetooth",
+	"network",
         //"backlight",
         "pulseaudio",
         "clock",
@@ -45,9 +46,12 @@
         "num-tags": 6
     },
     "network": {
-        "tooltip": false,
-        "format-wifi": "  {essid}",
-        "format-ethernet": ""
+	"format": "{icon} {essid} {signalStrength}%",
+    	"format-wifi": "    {ifname} {ipaddr}/{cidr} {signalStrength}%",
+    	"format-ethernet": "󰈀 {ipaddr}",
+    	"format-disconnected": "󰖪 disconnected",
+    	"tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
+    	"interval": 5
     },
     "backlight": {
         "tooltip": false,
@@ -111,7 +115,7 @@
     },
     "custom/power": {
         "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh",
+        "on-click": "bash ~/.config/rofi/leave/leave.sh"
     },
     "custom/updates": {
        "format": "{} Update(s)",
@@ -140,5 +144,5 @@
 	    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 	    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-    },
+    }
 }
