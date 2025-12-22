@@ -249,3 +249,15 @@ window#waybar.hidden {
 	color: #161320;
 	background: #F2CDCD;
 }
+
+#workspaces {
+	margin-top: 0px;
+	margin-left: 8px;
+	padding-left: 10px;
+    	margin-bottom: 0px;
+    	padding-right: 10px;
+    	border-radius: 10px;
+    	transition: none;
+    	color: #161320;
+    	background: #F8BD96;
+}

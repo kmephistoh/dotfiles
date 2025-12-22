@@ -11,7 +11,8 @@
         "cpu",
         "memory",
         "custom/media",
-        "tray"
+        "tray",
+	"ext/workspaces"
     ],
     "modules-center": [
         "wlr/taskbar"
@@ -135,7 +136,6 @@
         "on-click": "minimize-raise",
 	"icon-theme": "Papirus, hicolor"
     },
-
     "bluetooth": {
 	    "format": "{status}",
 	    "format-connected": " {device_alias}",
@@ -145,5 +145,19 @@
 	    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 	    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
+    "ext/workspaces": {
+	"format": "{name}:{icon}",
+	"on-click": "activate",
+	"format-icons": {
+		"work": "",
+		"term": "",
+		"foo": "",
+		"bar": "",
+		"active": "",
+		"default": ""
+	},
+	"sort-by-id": true,
+	//"active-only": true
     }
 }
