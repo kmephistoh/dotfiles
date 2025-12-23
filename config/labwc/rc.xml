@@ -35,7 +35,8 @@
     <dropShadows>yes</dropShadows>
     <icon>Papirus</icon>
   </theme>
-  <windowSwitcher show="yes" preview="yes" outlines="yes">
+  <windowSwitcher preview="yes" outlines="yes" allWorkspaces="no">
+    <osd show="yes" style="classic" output="all" thumbnailLabelFormat="%T" />
     <fields>
       <field content="icon" width="5%"/>
       <field content="type" width="15%"/>
@@ -54,7 +55,7 @@
   </focus>
   <!-- Set range to 0 to disable window snapping completely -->
   <snapping>
-    <range>1</range>
+    <range inner="10" outer="10" />
     <topMaximize>yes</topMaximize>
   </snapping>
   <!--
@@ -126,7 +127,10 @@
       <action name="Execute" command="bemenu-run"/>
     </keybind>
     <keybind key="F8">
-      <action name="Execute" command="wofi"/>
+      <action name="Execute" command="rofi -show drun"/>
+    </keybind>
+    <keybind key="F10">
+      <action name="Execute" command="flameshot gui"/>
     </keybind>
     <keybind key="F9">
       <action name="Execute" command="rofi -theme-str 'element-icon { size: 1.0em;}' -show window"/>
@@ -206,10 +210,10 @@
       <action name="ShowMenu" menu="client-menu"/>
     </keybind>
     <keybind key="XF86_AudioLowerVolume">
-      <action name="Execute" command="amixer sset Master 5%-"/>
+      <action name="Execute" command="amixer sset Master 1%-"/>
     </keybind>
     <keybind key="XF86_AudioRaiseVolume">
-      <action name="Execute" command="amixer sset Master 5%+"/>
+      <action name="Execute" command="amixer sset Master 1%+"/>
     </keybind>
     <keybind key="XF86_AudioMute">
       <action name="Execute" command="amixer sset Master toggle"/>
@@ -389,19 +393,26 @@
       - accelProfile [flat|adaptive]
       - tapButtonMap [lrm|lmr]
   -->
-  <libinput>
-    <device category="">
-      <naturalScroll/>
-      <leftHanded/>
-      <pointerSpeed/>
-      <accelProfile/>
-      <tap>yes</tap>
-      <tapButtonMap/>
-      <middleEmulation/>
-      <disableWhileTyping/>
-      <scrollFactor>1.0</scrollFactor>
-    </device>
-  </libinput>
+ <libinput>
+  <device>
+    <naturalScroll>yes</naturalScroll>
+    <leftHanded>no</leftHanded>
+    <!-- <pointerSpeed></pointerSpeed> -->
+    <!-- <accelProfile></accelProfile> -->
+    <tap>yes</tap>
+    <!-- <tapButtonMap></tapButtonMap> -->
+    <!-- <tapAndDrag></tapAndDrag> -->
+    <!-- <dragLock></dragLock> -->
+    <!-- <threeFingerDrag></threeFingerDrag> -->
+    <!-- <middleEmulation></middleEmulation> -->
+    <!-- <disableWhileTyping></disableWhileTyping> -->
+    <!-- <clickMethod></clickMethod> -->
+    <!-- <scrollMethod></scrollMethod> -->
+    <!-- <sendEventsMode></sendEventsMode> -->
+    <!-- <calibrationMatrix></calibrationMatrix> -->
+    <scrollFactor>1.0</scrollFactor>
+  </device>
+</libinput>
   <!--
     Window Rules
       - Criteria can consist of 'identifier' or 'title' or both (in which case
@@ -419,6 +430,7 @@
   </windowRules>
   -->
   <placement>
-    <policy/>
+    <policy>cascade</policy>
+    <cascadeOffset x="40" y="30" />
   </placement>
 </labwc_config>
