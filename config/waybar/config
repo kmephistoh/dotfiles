@@ -161,7 +161,7 @@
     },
     "wireplumber#sink": {
         "format": "{icon} {volume}%",
-        "format-muted": "",
+        "format-muted": "<span font='15'> </span>",
         "format-icons": {
             "headphones": "󰋋",
             "default": [
@@ -177,8 +177,8 @@
     "wireplumber#source": {
         "node-type": "Audio/Source",
         "format": "{volume}% ",
-        "format-muted": "",
-        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+        "format-muted": " ",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
         "scroll-step": 1
     }
 }
