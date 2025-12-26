@@ -37,3 +37,9 @@ save_to_clipboard = true
 decorations_theme_variant = "Dark"
 opacity = 0.9
 title = "Godlike"
+
+[terminal]
+
+[terminal.shell]
+program = "tmux"
+args = ["new-session", "-A", "-s", "minipc"]
