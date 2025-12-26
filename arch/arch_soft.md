@@ -91,6 +91,10 @@ sudo pacman -S imagemagick
 
 sudo pacman -S obs-studio
 
+# icons
+
+sudo pacman -S papirus-icon-theme
+
 # git
 
 git config --global https.proxy http://192.168.1.5:1081
