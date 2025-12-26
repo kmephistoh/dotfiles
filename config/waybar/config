@@ -10,24 +10,25 @@
         "custom/launcher",
         "cpu",
         "memory",
-        "custom/media",
-	"ext/workspaces",
+        //"custom/media",
+        "ext/workspaces",
         "tray"
     ],
     "modules-center": [
         "wlr/taskbar"
-        //"river/tags"
     ],
     "modules-right": [
         //"custom/updates",
         //"custom/wallpaper",
         "bluetooth",
-	"network",
+        "wireplumber#source",
+        "network",
+        "wireplumber#sink",
+        "clock"
         //"backlight",
-        "pulseaudio",
-        "clock",
-        "battery"
-        // "custom/power"
+        //"pulseaudio",
+        //"battery"
+        //"custom/power"
     ],
     "pulseaudio": {
         "tooltip": false,
@@ -36,7 +37,7 @@
         "format-muted": "<span font='15'color='#ff69b4'>󰝟</span>",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "format-icons": {
-	    "headphones": "󰋋",
+            "headphones": "󰋋",
             "default": [
                 "",
                 "",
@@ -44,16 +45,13 @@
             ]
         }
     },
-    "river/tags": {
-        "num-tags": 6
-    },
     "network": {
-	"format": "{icon} {essid} {signalStrength}%",
-    	"format-wifi": "  {ifname} {ipaddr}/{cidr} {signalStrength}%",
-    	"format-ethernet": "󰈀 {ipaddr}",
-    	"format-disconnected": "󰖪 disconnected",
-    	"tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
-    	"interval": 5
+        "format": "{icon} {essid} {signalStrength}%",
+        "format-wifi": "  {ifname} {ipaddr}/{cidr} {signalStrength}%",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-disconnected": "󰖪 disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
+        "interval": 5
     },
     "backlight": {
         "tooltip": false,
@@ -120,44 +118,67 @@
         "on-click": "bash ~/.config/rofi/leave/leave.sh"
     },
     "custom/updates": {
-       "format": "{} Update(s)",
-       "exec": "checkupdates | wc -l",
-      "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
-       "interval": 15,
-       "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
     },
     "custom/wallpaper": {
-      "format": " ",
-       "on-click": "bash ~/.config/system_scripts/pkill_bc"
+        "format": " ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc"
     },
     "wlr/taskbar": {
-	"all-outputs": true,
+        "all-outputs": true,
         "format": "{icon}",
+        "icon-size": 18,
         "on-click": "minimize-raise",
-	"icon-theme": "Papirus, hicolor"
+        "icon-theme": "Papirus, hicolor"
     },
     "bluetooth": {
-	    "format": "{status}",
-	    "format-connected": " {device_alias}",
-	    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-	    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-	    "tooltip-format": "{controller_alias}\t{controller_address}\n{num_connections} connected",
-	    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n{num_connections} connected\n{device_enumerate}",
-	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+        "format": "{status}",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+        "tooltip-format": "{controller_alias}\t{controller_address}\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n{num_connections} connected\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
     },
     "ext/workspaces": {
-	"format": "{name}:{icon}",
-	"on-click": "activate",
-	"format-icons": {
-		"work": "",
-		"term": "",
-		"foo": "",
-		"bar": "",
-		"active": "",
-		"default": ""
-	},
-	"sort-by-id": true,
-	//"active-only": true
+        "format": "{name}:{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "work": "",
+            "term": "",
+            "foo": "",
+            "bar": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-id": true
+        //"active-only": true
+    },
+    "wireplumber#sink": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "󰋋",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click-right": "helvum",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "scroll-step": 1
+    },
+    "wireplumber#source": {
+        "node-type": "Audio/Source",
+        "format": "{volume}% ",
+        "format-muted": "",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+        "scroll-step": 1
     }
 }
