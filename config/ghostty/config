@@ -55,3 +55,6 @@ background-opacity = 0.9
 title = Godlike
 window-save-state = always
 command = tmux new-session -A -s minipc
+background-image = "~/Pictures/bg.jpg"
+background-image-fit = cover
+background-image-opacity = 0.1
