@@ -97,7 +97,7 @@
         "max-length": 10
     },
     "disk": {
-        "format": " {}%",
+        "format": " {percentage_used}%",
         "interval": 30,
         "max-length": 10
     },
