@@ -10,3 +10,4 @@ end
 
 set -x PATH $PATH (go env GOPATH)/bin
 set PATH $PATH ~/.cargo/bin
+set -x GOPROXY https://goproxy.cn,direct
