@@ -10,6 +10,7 @@
         "custom/launcher",
         "cpu",
         "memory",
+        "disk",
         //"custom/media",
         "ext/workspaces",
         "tray"
@@ -92,7 +93,12 @@
     },
     "memory": {
         "interval": 30,
-        "format": " {}%",
+        "format": " {}%",
+        "max-length": 10
+    },
+    "disk": {
+        "format": " {}%",
+        "interval": 30,
         "max-length": 10
     },
     "custom/media": {
