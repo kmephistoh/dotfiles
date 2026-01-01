@@ -31,6 +31,8 @@ with DAG(
     tags=["social_media", "twitter", "multi_user"],
 ) as dag:
 
+    prev_task = None # 设定串行，防止被封ip
+
     # 动态为每个用户生成任务
     for user in USERS:
         user = user.strip()
@@ -56,6 +58,12 @@ with DAG(
             task_id=f"download_{user}",
             bash_command=gallery_dl_cmd,
         )
+
+        # 串行：上一个任务完成后才执行当前任务
+
+        if prev_task:
+            prev_task >> download_task
+        prev_task = download_task
 
         # 设置依赖：先建目录，再下载
         #create_dir >> download_task
