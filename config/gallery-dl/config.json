@@ -1,0 +1,13 @@
+{
+  "extractor": {
+    "base-directory": "~/Pictures/",
+    "twitter": {
+      "videos": true,
+      "retries": 5,
+      "sleep": "2.0-3.5",
+      "sleep-429": 2,
+      "image-filter": "user is author",
+      "filename": "{author[name]}-{tweet_id}-{date:%Y%m%d_%H%M%S}-img{num}.{extension}"
+    }
+  }
+}
