@@ -1,0 +1,56 @@
+global {
+    # lan_interface: auto
+    wan_interface: auto
+    log_level: warn
+    auto_config_kernel_parameter: true
+    allow_insecure: true
+    bandwidth_max_tx: '20 m'
+    bandwidth_max_rx: '100 m'
+}
+
+node {
+    hy2: "hysteria2://passwd@host:port/?sni=your_domain"
+}
+
+dns {
+    upstream {
+        alidns: "udp://dns.alidns.com:53"
+        googledns: "tcp+udp://dns.google:53"
+    }
+    routing {
+        request {
+            fallback: alidns
+        }
+        response {
+      	    upstream(googledns) -> accept
+            ip(geoip:private) && !qname(geosite:cn) -> googledns
+            fallback: accept
+        }
+    }
+}
+
+group {
+    proxy_group {
+        filter: name(hy2)
+        policy: random
+    }
+}
+
+routing {
+  
+    pname(NetworkManager) -> direct
+    pname("dnsmasq") -> direct
+    
+    dip("127.0.0.0/8") -> direct
+
+    dip("::1/128") -> direct
+
+    dip(224.0.0.0/3, 'ff00::/8') -> direct
+
+    dip(geoip:private) -> direct
+
+    dip(geoip:cn) -> direct
+    domain(geosite:cn) -> direct
+
+    fallback: proxy_group
+}
