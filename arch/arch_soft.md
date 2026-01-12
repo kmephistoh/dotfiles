@@ -95,6 +95,13 @@ sudo pacman -S obs-studio
 
 sudo pacman -S papirus-icon-theme
 
+# fonts
+圆体:江城圆体
+
+sudo pacman -S adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts
+paru -S ttf-zhuque-fangsong-bin
+paru -S ttf-jf-openhuninn
+
 # git
 
 git config --global https.proxy http://192.168.1.5:1081
