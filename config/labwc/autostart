@@ -11,10 +11,10 @@ wpaperd >/dev/null 2>&1 &
 #     output HDMI-A-1 position 1366,0
 #     output eDP-1 position 0,0
 #   }
-##kanshi >/dev/null 2>&1 &
+#kanshi >/dev/null 2>&1 &
 
 #refresh rate
-wlr-randr --output HDMI-A-1 --mode 2560x1440@100.000
+wlr-randr --output HDMI-A-1 --mode 2560x1440@100
 
 # Launch a panel such as yambar or waybar.
 waybar >/dev/null 2>&1 &

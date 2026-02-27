@@ -43,9 +43,9 @@ SDL_IM_MODULE=fcitx
 #VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
 #
 #AMDVLK
-VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd32.json:/usr/share/vulkan/icd.d/amd_icd64.json
+#VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd32.json:/usr/share/vulkan/icd.d/amd_icd64.json
 
 #MangoHud
-MANGOHUD=1
+#MANGOHUD=1
 XCURSOR_SIZE=24
 XKB_DEFAULT_LAYOUT=us
