@@ -98,7 +98,7 @@ sudo pacman -S papirus-icon-theme
 # fonts
 圆体:江城圆体
 
-sudo pacman -S adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts
+sudo pacman -S adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts ttf-jetbrains-mono
 paru -S ttf-zhuque-fangsong-bin
 paru -S ttf-jf-openhuninn
 
@@ -106,6 +106,8 @@ paru -S ttf-jf-openhuninn
 
 git config --global https.proxy http://192.168.1.5:1081
 git config --global https.proxy https://192.168.1.5:1081
+
+sudo acman -S git-delta
 
 # ly
 
@@ -122,6 +124,10 @@ sudo pacman -S strace
 # internet nm
 
 sudo pacman -S networkmanager dnsmasq
+
+# Video Editor
+
+sudo pacman -S shotcut
 
 0. wifi list
    nmcli device wifi list
