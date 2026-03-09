@@ -35,7 +35,7 @@
     <dropShadows>yes</dropShadows>
     <icon>Papirus</icon>
   </theme>
-  <windowSwitcher preview="yes" outlines="yes" allWorkspaces="no">
+  <action name="NextWindow" workspaces="all" output="all" identifier="all" >
     <osd show="yes" style="classic" output="all" thumbnailLabelFormat="%T" />
     <fields>
       <field content="icon" width="5%"/>
@@ -43,7 +43,7 @@
       <field content="identifier" width="30%"/>
       <field content="title" width="50%"/>
     </fields>
-  </windowSwitcher>
+  </action>
   <!-- edge strength is in pixels -->
   <resistance>
     <screenEdgeStrength>20</screenEdgeStrength>
