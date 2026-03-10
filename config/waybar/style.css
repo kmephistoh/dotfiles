@@ -297,3 +297,14 @@ window#waybar.hidden {
   color: #161320;
   background: #f8bd96;
 }
+#bluetooth {
+  margin-top: 0px;
+  margin-left: 8px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  border-radius: 10px;
+  transition: none;
+  color: #161320;
+  background: #568bdf;
+}
