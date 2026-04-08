@@ -1,0 +1,23 @@
+[Unit]
+Description=dae Service
+Documentation=https://github.com/daeuniverse/dae
+#After=network-online.target docker.service systemd-sysctl.service
+#After=network-online.target
+#Wants=network-online.target
+#只要求网络存在，不等待完全就绪，个人电脑会核查很久，注释掉上面的network-online
+After=network.target
+Requires=network.target
+
+[Service]
+Type=simple
+User=root
+LimitNPROC=512
+LimitNOFILE=1048576
+ExecStartPre=/usr/bin/dae validate -c /etc/dae/config.dae
+ExecStart=/usr/bin/dae run --disable-timestamp -c /etc/dae/config.dae
+ExecReload=/usr/bin/dae reload $MAINPID
+Restart=on-abnormal
+TimeoutStartSec=120
+
+[Install]
+WantedBy=multi-user.target
