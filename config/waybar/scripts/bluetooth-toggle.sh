@@ -19,7 +19,7 @@ info=$(bluetoothctl info "$BLUETOOTH_MAC")
 if echo "$info" | grep -q "Connected: yes"; then
     # 已连接 → 断开
     bluetoothctl disconnect "$BLUETOOTH_MAC" >/dev/null 2>&1
-    notify "蓝牙已断开" "$BLUETOOTH_MAC"
+    notify "已断开⏹️" "$BLUETOOTH_MAC"
 else
     # 尝试连接
     bluetoothctl connect "$BLUETOOTH_MAC" >/dev/null 2>&1
@@ -27,9 +27,9 @@ else
 
     # 验证结果
     if bluetoothctl info "$BLUETOOTH_MAC" | grep -q "Connected: yes"; then
-        notify "连接成功" "已连接 $BLUETOOTH_MAC"
+        notify "连接成功✅" "$BLUETOOTH_MAC"
     else
-        notify "连接失败" "蓝牙设备未开机或不在附近"
+        notify "连接失败❌" "蓝牙设备未开机或不在附近"
         exit 1
     fi
 fi
