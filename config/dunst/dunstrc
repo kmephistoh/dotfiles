@@ -1,6 +1,9 @@
 # See dunst(5) for all configuration options
 
 [global]
+    icon_theme = Papirus
+    #enable_recursive_icon_lookup = true
+
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
@@ -22,18 +25,18 @@
     ### Geometry ###
 
     # dynamic width from 0 to 300
-    # width = (0, 300)
+    width = (0, 300)
     # constant width of 300
-    width = 300
+    #width = 300
 
     # The maximum height of a single notification, excluding the frame.
-    height = 300
+    height = (0, 300)
 
     # Position the notification in the top right corner
     origin = top-center
 
     # Offset from the origin
-    offset = 10x50
+    offset = (10, 50)
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -193,10 +196,11 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 64
+    max_icon_size = 128
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Papirus/48x48/actions/:/usr/share/icons/Papirus/48x48/apps/:/usr/share/icons/Papirus/48x48/devices/:/usr/share/icons/Papirus/48x48/status/
 
     ### History ###
 
