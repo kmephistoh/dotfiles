@@ -21,6 +21,7 @@
     "modules-right": [
         //"custom/updates",
         //"custom/wallpaper",
+        //"custom/orbit",
         "bluetooth",
         "wireplumber#source",
         "network",
@@ -133,6 +134,13 @@
     "custom/wallpaper": {
         "format": " ",
         "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    },
+    "custom/orbit": {
+        "exec": "orbit waybar-status",
+        "return-type": "json",
+        "interval": 10,
+        "on-click": "orbit toggle bottom-center",
+        "format": "󱗿"
     },
     "wlr/taskbar": {
         "all-outputs": true,
