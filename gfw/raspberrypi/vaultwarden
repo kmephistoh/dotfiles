@@ -1,0 +1,41 @@
+server {
+    listen 443 ssl;
+    server_name _;
+
+    ssl_certificate /etc/nginx/ssl/my.pem;
+    ssl_certificate_key /etc/nginx/ssl/my.key;
+
+    location = /proxy.pac {
+        root /var/www/html;
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_set_header Host  $host;
+        proxy_set_header X-Real-IP  $remote_addr;
+        proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto  $scheme;
+    }
+
+    location /notifications/hub {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade  $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+
+
+# Chromium 新版 --proxy-pac-url 加载 HTTPS 的 PAC 文件失效，需要单独改为http
+server {
+    listen 80;
+    server_name 192.168.1.5;
+
+    location = /proxy.pac {
+        root /var/www/html;
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+}
