@@ -177,6 +177,9 @@
     <keybind key="W-m">
       <action name="ToggleMaximize"/>
     </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
     <keybind key="W-h">
       <action name="Iconify"/>
     </keybind>
