@@ -137,7 +137,8 @@
         <name>Execute</name>
         <!-- <command>sh -c 'grim -g "`slurp`" - | swappy -f -'</command> -->
         <!-- <command>$HOME/.config/labwc/screenshot.sh</command> -->
-        <command>sh -c 'grim -g "`slurp`" - | ksnip -'</command>
+        <!-- <command>sh -c 'grim -g "`slurp`" - | ksnip -'</command> -->
+        <command>sh -c 'grim -g "`slurp`" -t ppm - | satty -f -'</command>
       </action>
     </keybind>
     <keybind key="W-Return">
