@@ -37,6 +37,9 @@ XMODIFIERS=@im=fcitx
 INPUT_METHOD=fcitx
 SDL_IM_MODULE=fcitx
 
+#wlroots渲染器
+WLR_RENDERER=vulkan
+
 #vulkan
 #============
 #MESA RADV
