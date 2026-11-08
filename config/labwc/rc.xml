@@ -7,6 +7,7 @@
   <core>
     <decoration>server</decoration>
     <gap>0</gap>
+    <hdr>yes</hdr>
     <adaptiveSync>no</adaptiveSync>
     <reuseOutputMode>no</reuseOutputMode>
   </core>
